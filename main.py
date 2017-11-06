@@ -3,19 +3,17 @@ import time
 import logging
 from cloudshell.api.cloudshell_api import *
 import json
-import argparse
 
-parser = argparse.ArgumentParser()
+logging.basicConfig(level=logging.DEBUG, format='[%(levelname)s] (%(threadName)-10s) %(message)s', )
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='[%(levelname)s] (%(threadName)-10s) %(message)s', )
-
-NUMBER_OF_BUILDS = 15
+NUMBER_OF_BUILDS_MULTIPLE_EXECUTIONS = [10, 15, 30, 50, 75, 100]
+NUMBER_OF_BUILDS = 15  # default
 MAIN_LOOP = 5
 
 users = ['admin' for i in xrange(NUMBER_OF_BUILDS)]
 domain = ['SSP SJC' for i in xrange(NUMBER_OF_BUILDS)]
 duts = ['[Any]' for i in xrange(NUMBER_OF_BUILDS)]
+# topology = 'SSP SJC topologies/Topo 1 KP 2017-05-31 [SSP SJC]'
 topology = 'SSP SJC topologies/Topo 1 KP 2017-05-31 [SSP SJC]'
 global_input = []
 password = 'admin'
@@ -90,7 +88,7 @@ def cleanup():
     api = CloudShellAPISession(host, 'admin', password, 'Global')
     active_reservations = api.GetCurrentReservations('admin').Reservations
     for r in active_reservations:
-        if ('Performance_' in r.Name):
+        if ('Performance' in r.Name):
             try:
                 api.EndReservation(r.Id)
             except:
@@ -130,15 +128,16 @@ def main():
 
         [t.join() for t in threads]
 
+        main_loop_end = time.time()
+        main_loop_elapsed = main_loop_end - main_loop_start
+
         logging.debug('~~~~~ Iteration {0} Average ~~~~~'.format(j))
         logging.debug('{0} of threads'.format(NUMBER_OF_BUILDS))
+        logging.debug('Iteration duration: {0}'.format(main_loop_elapsed))
         iteration_durations = [stat.duration for stat in iteration_stats]
         iteration_errors = [stat.error for stat in iteration_stats if stat.error]
         avg_duration_iteration_result = str(mean(iteration_durations))
         errors_in_iteration_result = len(iteration_errors)
-
-        main_loop_end = time.time()
-        main_loop_elapsed = main_loop_end - main_loop_start
 
         results["Iteration {0}".format(j)] = {
             "average_duration": avg_duration_iteration_result,
@@ -158,8 +157,6 @@ def main():
                 print e
         del average_reserve_duration_inside_iteration[:]
         del errors_in_iteration[:]
-
-
 
     logging.debug('####### TOTAL AVERAGE ######')
     logging.debug('{0} of threads'.format(NUMBER_OF_BUILDS))
@@ -181,7 +178,7 @@ def main():
     with open('{0}.json'.format('number_of_builds_' + str(NUMBER_OF_BUILDS)), 'w') as fp:
         json.dump(results, fp)
 
-number_of_iterations = [10, 15, 30, 50, 100]
-for itera in number_of_iterations:
+
+for itera in NUMBER_OF_BUILDS_MULTIPLE_EXECUTIONS:
     NUMBER_OF_BUILDS = itera
     main()
