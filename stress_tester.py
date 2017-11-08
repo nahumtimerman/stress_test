@@ -2,7 +2,7 @@ from Agents.BenchmarkAgent import BenchmarkAgent
 
 import this
 
-from breaker import main
+from executor import main
 
 # mixed_scenario_enders_and_getters = {ReserverEnder: 30, ReserverSingleGetter: 20}
 # reserve_get_status = {ReserverGetterOnlyStatus: 30}
