@@ -15,10 +15,11 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ncs_stress_test$ender.coverage" NAME="ender Coverage Results" MODIFIED="1509983272331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ncs_stress_test$visualize__3_.coverage" NAME="visualize (3) Coverage Results" MODIFIED="1509988135856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/Staging" />
     <SUITE FILE_PATH="coverage/ncs_stress_test$visualize__2_.coverage" NAME="visualize (2) Coverage Results" MODIFIED="1509972151404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Measurements/NCS Sunday/DevEnvironment" />
     <SUITE FILE_PATH="coverage/ncs_stress_test$visualize__1_.coverage" NAME="visualize (1) Coverage Results" MODIFIED="1509972212494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Measurements/NCS Sunday/Staging" />
-    <SUITE FILE_PATH="coverage/ncs_stress_test$main_breaker.coverage" NAME="main_breaker Coverage Results" MODIFIED="1509982782409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ncs_stress_test$visualize.coverage" NAME="visualize Coverage Results" MODIFIED="1509972041127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="//qsnas1/shared/Nahum/Measurements/NCS Sunday/DevEnvironment" />
+    <SUITE FILE_PATH="coverage/ncs_stress_test$main_breaker.coverage" NAME="main_breaker Coverage Results" MODIFIED="1509987324136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ncs_stress_test$visualize.coverage" NAME="visualize Coverage Results" MODIFIED="1509988069696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/DevEnvironment" />
     <SUITE FILE_PATH="coverage/ncs_stress_test$breaker.coverage" NAME="breaker Coverage Results" MODIFIED="1509949369979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ncs_stress_test$main.coverage" NAME="main Coverage Results" MODIFIED="1509970050942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -31,18 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ender.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ender.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,11 +42,81 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="breaker_number_of_builds_20.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_20.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="breaker_number_of_builds_30.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_30.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="breaker_number_of_builds_75.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_75.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="breaker_number_of_builds_50.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_50.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="2312" selection-start-line="0" selection-start-column="2312" selection-end-line="0" selection-end-column="2312" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualize.py" pinned="false" current-in-tab="true">
+        <entry file="file:////qsnas1/shared/Nahum/Measurements/NCS Monday Evening/Staging/visualize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualize.py" pinned="false" current-in-tab="false">
+        <entry file="file:////qsnas1/shared/Nahum/Measurements/NCS Monday Evening/DevEnvironment/visualize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tkinter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../trunk/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/lib-tk/Tkinter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1813" column="60" selection-start-line="1813" selection-start-column="60" selection-end-line="1813" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main_breaker.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_breaker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="46" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="46" />
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="e#0#111#0" expanded="true" />
               </folding>
@@ -65,34 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urllib2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../trunk/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/urllib2.py">
+      <file leaf-file-name="breaker_number_of_builds_10.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_10.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1196" column="0" selection-start-line="1196" selection-start-column="0" selection-end-line="1196" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="breaker.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/breaker.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0182291">
-              <caret line="114" column="82" selection-start-line="114" selection-start-column="82" selection-end-line="114" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#972#1011#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cloudshell_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../trunk/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/site-packages/cloudshell/api/cloudshell_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2855" column="8" selection-start-line="2855" selection-start-column="8" selection-end-line="2855" selection-end-column="8" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="513" selection-start-line="0" selection-start-column="513" selection-end-line="0" selection-end-column="513" />
               <folding />
             </state>
           </provider>
@@ -118,9 +154,11 @@
         <option value="$PROJECT_DIR$/breaker_end_reservation_without_get.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/agent.py" />
-        <option value="$PROJECT_DIR$/main_breaker.py" />
         <option value="$PROJECT_DIR$/breaker_number_of_builds_15.json" />
         <option value="$PROJECT_DIR$/breaker.py" />
+        <option value="$PROJECT_DIR$/main_breaker.py" />
+        <option value="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/DevEnvironment/visualize.py" />
+        <option value="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/Staging/visualize.py" />
       </list>
     </option>
   </component>
@@ -133,7 +171,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -185,7 +223,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cloudshell-traffic-teravm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -196,43 +234,7 @@
       <recent name="C:\work\git\ncs_stress_test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ender">
-    <configuration default="false" name="visualize (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\work\trunk\Drop\TestShell\ExecutionServer\python\2.7.10\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/Measurements/NCS Sunday/DevEnvironment" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ncs_stress_test" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/Measurements/NCS Sunday/DevEnvironment/visualize.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\work\trunk\Drop\TestShell\ExecutionServer\python\2.7.10\python.exe" />
-      <option name="WORKING_DIRECTORY" value="//qsnas1/shared/Nahum/Measurements/NCS Sunday/DevEnvironment" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ncs_stress_test" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="//qsnas1/shared/Nahum/Measurements/NCS Sunday/DevEnvironment/visualize.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.visualize (3)">
     <configuration default="false" name="visualize (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,6 +285,42 @@
       <module name="ncs_stress_test" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ender.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="visualize (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\work\trunk\Drop\TestShell\ExecutionServer\python\2.7.10\python.exe" />
+      <option name="WORKING_DIRECTORY" value="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/Staging" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ncs_stress_test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/Staging/visualize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\work\trunk\Drop\TestShell\ExecutionServer\python\2.7.10\python.exe" />
+      <option name="WORKING_DIRECTORY" value="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/DevEnvironment" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ncs_stress_test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="//qsnas1/shared/Nahum/Measurements/NCS Monday Evening/DevEnvironment/visualize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -481,19 +519,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.visualize (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.visualize" />
-      <item index="2" class="java.lang.String" itemvalue="Python.visualize (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.main_breaker" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ender" />
+      <item index="0" class="java.lang.String" itemvalue="Python.visualize (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main_breaker" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ender" />
+      <item index="3" class="java.lang.String" itemvalue="Python.visualize (3)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.visualize" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ender" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main_breaker" />
-        <item index="2" class="java.lang.String" itemvalue="Python.visualize (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.visualize (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.visualize" />
+        <item index="0" class="java.lang.String" itemvalue="Python.visualize (3)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.visualize" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main_breaker" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ender" />
+        <item index="4" class="java.lang.String" itemvalue="Python.visualize (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -511,8 +549,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -522,7 +560,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33742005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4127844" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55362946" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55362946" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -683,16 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/for_ncs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -719,14 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../trunk/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1882555">
-          <caret line="1820" column="30" selection-start-line="1820" selection-start-column="30" selection-end-line="1820" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/Measurements/NCS Sunday/Staging/visualize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -739,14 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1196" column="0" selection-start-line="1196" selection-start-column="0" selection-end-line="1196" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -769,17 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/breaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0182291">
-          <caret line="114" column="82" selection-start-line="114" selection-start-column="82" selection-end-line="114" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#972#1011#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6021277">
@@ -793,13 +794,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/breaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="38" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#972#1011#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_10.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="513" selection-start-line="0" selection-start-column="513" selection-end-line="0" selection-end-column="513" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_20.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_30.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_75.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/breaker_number_of_builds_50.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="2312" selection-start-line="0" selection-start-column="2312" selection-end-line="0" selection-end-column="2312" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../trunk/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1813" column="60" selection-start-line="1813" selection-start-column="60" selection-end-line="1813" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_breaker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="46" />
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="e#0#111#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:////qsnas1/shared/Nahum/Measurements/NCS Monday Evening/DevEnvironment/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:////qsnas1/shared/Nahum/Measurements/NCS Monday Evening/Staging/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,10 @@
 import logging
-from time import sleep, time
+import sys
 import random
+from time import sleep, time
 
-from cloudshell.api.cloudshell_api import CloudShellAPISession, UpdateTopologyRequirementsInputsRequest
+from cloudshell.api.cloudshell_api import UpdateTopologyRequirementsInputsRequest
+
 
 # from breaker import host, users, password, domain, topology, duts, global_input
 
@@ -104,9 +106,9 @@ class Agent(object):
             status = api.GetReservationStatus(reservation_id).ReservationSlimStatus.ProvisionigStatus
 
             tries = 0
-            max_tries = random.randint(3, 10)
+            max_tries = 5
             while tries < max_tries \
-                    and status == api.GetReservationStatus(reservation_id).ReservationSlimStatus.ProvisionigStatus:
+                    and 'Ready' not in api.GetReservationStatus(reservation_id).ReservationSlimStatus.ProvisionigStatus:
                 sleep(self.RESERVATION_DETAILS_BASE_SLEEP)
                 tries += 1
         except Exception as e:
@@ -138,113 +140,7 @@ class Agent(object):
         self._random_sleep(sleep_time)
 
 
-class ReserverGetter(Agent):
-    def __init__(self, host, username, password, domain, topology):
-        global_input = []
-        duts = ['[Any]']
-        super(ReserverGetter, self).__init__(duts, global_input)
-        self.topology = topology
-        self.domain = domain
-        self.password = password
-        self.host = host
-        self.username = username
-
-    def doing_stuff(self, num, statistics):
-        self.random_sleep()
-        api = CloudShellAPISession(self.host, self.username, self.password, self.domain)
-        # self.random_sleep()
-        self.reserve_topology(api, self.topology, num, statistics)
-        # self.random_sleep()
-        self.check_reservation_status(api, num, statistics)
-        # self.random_sleep()
-        # self.end_my_reservations(api, num, statistics)
-
-class ReserverGetterOnlyStatus(Agent):
-    def __init__(self, host, username, password, domain, topology):
-        global_input = []
-        duts = ['[Any]']
-        super(ReserverGetterOnlyStatus, self).__init__(duts, global_input)
-        self.topology = topology
-        self.domain = domain
-        self.password = password
-        self.host = host
-        self.username = username
-
-    def doing_stuff(self, num, statistics):
-        self.random_sleep()
-        api = CloudShellAPISession(self.host, self.username, self.password, self.domain)
-        # self.random_sleep()
-        self.reserve_topology(api, self.topology, num, statistics)
-        sleep(5)
-        self.check_only_reservation_status(api, num, statistics)
-        # self.random_sleep()
-        # self.end_my_reservations(api, num, statistics)
-
-
-class BenchmarkAgent(Agent):
-    def __init__(self, host, username, password, domain, topology):
-        global_input = []
-        duts = ['[Any]']
-        super(BenchmarkAgent, self).__init__(duts, global_input)
-        self.topology = topology
-        self.domain = domain
-        self.password = password
-        self.host = host
-        self.username = username
-
-    def doing_stuff(self, num, statistics):
-        self.random_sleep()
-        api = CloudShellAPISession(self.host, self.username, self.password, self.domain)
-        self.reserve_topology(api, self.topology, num, statistics)
-        self.single_get_reservation(api, num, statistics)
-        self.check_only_reservation_status(api, num, statistics)
-        self.end_my_reservations(api, num, statistics)
-
-class ReserverSingleGetter(Agent):
-    def __init__(self, host, username, password, domain, topology):
-        global_input = []
-        duts = ['[Any]']
-        super(ReserverSingleGetter, self).__init__(duts, global_input)
-        self.topology = topology
-        self.domain = domain
-        self.password = password
-        self.host = host
-        self.username = username
-
-    def doing_stuff(self, num, statistics):
-        self.random_sleep()
-        api = CloudShellAPISession(self.host, self.username, self.password, self.domain)
-        self.reserve_topology(api, self.topology, num, statistics)
-        self.random_sleep()
-        self.single_get_reservation(api, num, statistics)
-
-
-class ReserverEnder(Agent):
-    def __init__(self, host, username, password, domain, topology):
-        global_input = []
-        duts = ['[Any]']
-        super(ReserverEnder, self).__init__(duts, global_input)
-        self.topology = topology
-        self.domain = domain
-        self.password = password
-        self.host = host
-        self.username = username
-
-    def doing_stuff(self, num, statistics):
-        self.random_sleep()
-        api = CloudShellAPISession(self.host, self.username, self.password, self.domain)
-        # self.random_sleep()
-        self.reserve_topology(api, self.topology, num, statistics)
-        # self.random_sleep()
-        sleep(3)
-        # self.check_reservation_status(api, num, statistics)
-        # self.random_sleep()
-        self.end_my_reservations(api, num, statistics)
-
-
 # agentTypesToNumberOfAgentsToCreate = {ReserverEnder: 25, ReserverSingleGetter: 25}
-
-
 class AgentFactory(object):
     def __init__(self, agentTypesToNumberOfAgentsToCreate, host, username, password, domain, topology):
         self.domain = domain
