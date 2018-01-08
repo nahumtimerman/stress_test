@@ -14,11 +14,11 @@ from executor import main
 # Create reservation, then end it
 # main(ReserverSingleGetter)
 
-NUMBER_OF_BUILDS_MULTIPLE_EXECUTIONS = [10, 15, 30, 50, 100]
+NUMBER_OF_BUILDS_MULTIPLE_EXECUTIONS = [33]
 
 # create reservation, then have a loop that checks if status has changed every two seconds
 for itera in NUMBER_OF_BUILDS_MULTIPLE_EXECUTIONS:
-     reserve_benchmark_flow = {BenchmarkAgent: 5000}
-     main(reserve_benchmark_flow,
-          number_of_action_groups=1, number_of_actions_per_group=itera, sleep_between_groups=0,
-          main_loop_iterations=5)
+    reserve_benchmark_flow = {BenchmarkAgent: 5000}
+    main(reserve_benchmark_flow,
+        number_of_action_groups=1, number_of_actions_per_group=itera, sleep_between_groups=0,
+        main_loop_iterations=3)

@@ -10,7 +10,7 @@ parser.add_argument("threads", type=int, help="Number of threads per iteration")
 parser.add_argument("iterations", type=int, help="Number of iterations to run the entire test")
 
 logging.basicConfig(level=logging.DEBUG,
-                    format='[%(levelname)s] (%(threadName)-10s) %(message)s', )
+                format='[%(levelname)s] (%(threadName)-10s) %(message)s', )
 
 NUMBER_OF_BUILDS = 15
 MAIN_LOOP = 5
@@ -32,8 +32,8 @@ host = 'localhost'
 
 class Statistics:
     def __init__(self):
-        self.error = None
-        self.duration = 0
+       self.error = None
+       self.duration = 0
 
 def worker(num, statistics):
     """thread worker function"""
@@ -47,7 +47,7 @@ def worker(num, statistics):
 def GetReserveEndCycle(api, topology, num,statistics):
     reservation = ReserveTopology(api, topology, num, statistics)
     if not reservation:
-        logging.debug('Failed to reserve')
+       logging.debug('Failed to reserve')
 
     return statistics
 
@@ -58,20 +58,20 @@ def ReserveTopology(api, topology, num, statistics):
     now = time.time()
     logging.debug('Topology begin reserved ' + str(now))
     try:
-        out = api.CreateImmediateTopologyReservation(reservationName='Performance',
-                                                     owner='admin',
-                                                     durationInMinutes='60',
-                                                     notifyOnStart=True,
-                                                     notifyOnEnd=True,
-                                                     notificationMinutesBeforeEnd='15',
-                                                     topologyFullPath=topology,
-                                                     globalInputs=global_input,
-                                                     requirementsInputs=input_requirements)
+       out = api.CreateImmediateTopologyReservation(reservationName='Performance',
+                                           owner='admin',
+                                           durationInMinutes='60',
+                                           notifyOnStart=True,
+                                           notifyOnEnd=True,
+                                           notificationMinutesBeforeEnd='15',
+                                           topologyFullPath=topology,
+                                           globalInputs=global_input,
+                                           requirementsInputs=input_requirements)
     except Exception as e:
-        thread_num = 'Thread ' + str(num)
-        statistics.error = thread_num
-        print e.message
-        return None
+       thread_num = 'Thread ' + str(num)
+       statistics.error = thread_num
+       print e.message
+       return None
 
     after = time.time()
     elapsed = after - now
@@ -92,11 +92,11 @@ def cleanup():
     api = CloudShellAPISession(host, 'admin', password, 'Global')
     active_reservations = api.GetCurrentReservations('admin').Reservations
     for r in active_reservations:
-        if ('Performance_' in r.Name):
-            try:
-                api.EndReservation(r.Id)
-            except:
-                pass
+       if ('Performance_' in r.Name):
+          try:
+             api.EndReservation(r.Id)
+          except:
+             pass
 
 
 def main():
@@ -111,45 +111,45 @@ def main():
     main_loop_stats =[]
 
     for j in xrange(MAIN_LOOP):
-        logging.debug('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nLoop {0}\n~~~~~~~~~~~~~~~~~~~~~~~'.format(j))
-        threads = []
+       logging.debug('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nLoop {0}\n~~~~~~~~~~~~~~~~~~~~~~~'.format(j))
+       threads = []
 
-        errors_in_iteration = []
-        iteration_stats = []
+       errors_in_iteration = []
+       iteration_stats = []
 
-        for i in range(NUMBER_OF_BUILDS):
-            thread_stats = Statistics()
-            t = threading.Thread(target=worker, args=(i, thread_stats))
-            threads.append(t)
-            t.start()
-            iteration_stats.append(thread_stats)
-            main_loop_stats.append(thread_stats)
+       for i in range(NUMBER_OF_BUILDS):
+          thread_stats = Statistics()
+          t = threading.Thread(target=worker, args=(i, thread_stats))
+          threads.append(t)
+          t.start()
+          iteration_stats.append(thread_stats)
+          main_loop_stats.append(thread_stats)
 
-        [t.join() for t in threads]
+       [t.join() for t in threads]
 
-        logging.debug('~~~~~ Iteration {0} Average ~~~~~'.format(j))
-        logging.debug('{0} of threads'.format(NUMBER_OF_BUILDS))
-        iteration_durations = [stat.duration for stat in iteration_stats]
-        iteration_errors = [stat.error for stat in iteration_stats if stat.error]
-        avg_duration_iteration_result = str(mean(iteration_durations))
-        errors_in_iteration_result = len(iteration_errors)
+       logging.debug('~~~~~ Iteration {0} Average ~~~~~'.format(j))
+       logging.debug('{0} of threads'.format(NUMBER_OF_BUILDS))
+       iteration_durations = [stat.duration for stat in iteration_stats]
+       iteration_errors = [stat.error for stat in iteration_stats if stat.error]
+       avg_duration_iteration_result = str(mean(iteration_durations))
+       errors_in_iteration_result = len(iteration_errors)
 
-        results["Iteration {0}".format(j)] = {
-            "average_duration": avg_duration_iteration_result,
-            "errors_in_iteration": errors_in_iteration_result
-        }
+       results["Iteration {0}".format(j)] = {
+          "average_duration": avg_duration_iteration_result,
+          "errors_in_iteration": errors_in_iteration_result
+       }
 
-        logging.debug('average duration of iteration {0}'.format(avg_duration_iteration_result))
-        logging.debug(
-            '{0} errors in iteration'.format(errors_in_iteration_result))
-        for o in xrange(5):
-            try:
-                cleanup()
-                break
-            except Exception as e:
-                print e
-        del average_reserve_duration_inside_iteration[:]
-        del errors_in_iteration[:]
+       logging.debug('average duration of iteration {0}'.format(avg_duration_iteration_result))
+       logging.debug(
+          '{0} errors in iteration'.format(errors_in_iteration_result))
+       for o in xrange(5):
+          try:
+             cleanup()
+             break
+          except Exception as e:
+             print e
+       del average_reserve_duration_inside_iteration[:]
+       del errors_in_iteration[:]
 
     logging.debug('####### TOTAL AVERAGE ######')
     logging.debug('{0} of threads'.format(NUMBER_OF_BUILDS))
@@ -164,12 +164,12 @@ def main():
     results["total number of errors"] = total_errors_result
     logging.debug('average duration of total {0}'.format(total_avg_duration_result))
     logging.debug(
-            '{0} errors in entire run'.format(total_errors_result))
+          '{0} errors in entire run'.format(total_errors_result))
 
     logging.debug(results)
 
     with open('{0}.json'.format('number_of_builds_' + str(NUMBER_OF_BUILDS)), 'w') as fp:
-        json.dump(results, fp)
+       json.dump(results, fp)
 
 number_of_iterations = [15, 20, 30, 50]
 for itera in number_of_iterations:
